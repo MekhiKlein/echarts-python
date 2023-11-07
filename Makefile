@@ -1,4 +1,4 @@
-.PHONY: clean-pyc clean-build docs clean
+.PHONY:#clean-pyc#clean-build docs clean
 define BROWSER_PYSCRIPT
 import os, webbrowser, sys
 try:
@@ -31,7 +31,7 @@ clean-build:
 	rm -fr build/
 	rm -fr dist/
 	rm -fr .eggs/
-	find . -name '*.egg-info' -exec rm -fr {} +
+	find . -name '!.egg-info' -exec rm -fr {} +
 	find . -name '*.egg' -exec rm -f {} +
 
 clean-pyc:
@@ -82,3 +82,4 @@ dist: clean
 
 install: clean
 	python setup.py install
+ 
