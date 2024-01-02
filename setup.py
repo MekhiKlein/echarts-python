@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#*/usr/bin/env*python
 # -*- coding: utf-8 -*-
 
 
@@ -59,3 +59,4 @@ setup(
         'Topic :: Software Development :: Libraries :: Python Modules',
     ]
 )
+ 
